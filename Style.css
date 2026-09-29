@@ -1,0 +1,307 @@
+/* ============================= */
+/* RESET                         */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+}
+
+
+/* ============================= */
+/* MENU / HEADER                 */
+/* ============================= */
+
+header {
+    background-color: #1f3d2b;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 25px;
+    color: #d4af37;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ============================= */
+/* HERO / ACCUEIL                */
+/* ============================= */
+
+.hero {
+    min-height: 600px;
+    background-color: #f5f0e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #1f3d2b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #1f3d2b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #d4af37;
+    color: #1f3d2b;
+}
+
+
+/* ============================= */
+/* COLLECTION                    */
+/* ============================= */
+
+#collection {
+    padding: 60px 6%;
+    background-color: #f5f0e8;
+    text-align: center;
+}
+
+#collection h2 {
+    color: #1f3d2b;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.carte {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.carte h3 {
+    color: #1f3d2b;
+    margin: 20px 10px 10px;
+    font-size: 22px;
+}
+
+.carte p {
+    color: #555;
+    margin: 0 15px 20px;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* À PROPOS                      */
+/* ============================= */
+
+#apropos {
+    padding: 60px 6%;
+    text-align: center;
+    background-color: white;
+}
+
+#apropos h2 {
+    color: #1f3d2b;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#apropos p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* ============================= */
+/* GALERIE                       */
+/* ============================= */
+
+#galerie {
+    padding: 60px 6%;
+    background-color: #f5f0e8;
+    text-align: center;
+}
+
+#galerie h2 {
+    color: #1f3d2b;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galerie img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ============================= */
+/* CONTACT                       */
+/* ============================= */
+
+#contact {
+    padding: 60px 6%;
+    background-color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #1f3d2b;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#contact p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+/* ============================= */
+/* BOUTONS                       */
+/* ============================= */
+
+.btn {
+    display: inline-block;
+    background-color: #1f3d2b;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d4af37;
+    color: #1f3d2b;
+}
+
+
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
+
+footer {
+    background-color: #1f3d2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ============================= */
+/* RESPONSIVE - TÉLÉPHONE        */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cartes {
+        grid-template-columns: 1fr;
+    }
+
+    .galerie {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        height: 350px;
+    }
+
+    .photo img {
+        height: 350px;
+    }
+}
